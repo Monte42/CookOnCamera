@@ -1,0 +1,8 @@
+data/
+img/
+pics/
+videos/
+voiceOvers/
+*.jpg
+*.png
+*.mp4

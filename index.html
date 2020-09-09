@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chris Cook</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Playfair+Display|Rosarivo&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/5f8b98bce7.js"></script>
+  </head>
+    <body onload="fullVideoBuild()">
+
+  <!-- HEADER -->
+
+    <div id="hero" data-scroll-speed='2'>
+      <div id="header">
+        <div id="headbar"></div>
+        <h1 id="actorsName">Chris Cook</h1>
+      </div>
+      <div id="headImg"
+        style="background-image: url(data/pics/Cook_Chris_01.jpg)"
+      ></div>
+    </div>
+
+<!-- Front Pic -->
+
+    <div class="top container">
+      <div id="frontImg"
+        style='background-image: url(data/pics/Cook_Chris_02.jpg)'
+      ></div>
+    </div>
+
+
+
+    <div class="example container">
+        <h3>Where <strong>Chris Cook</strong> has appeared</h3>
+        <p>
+          Chris started working on camera in the mid 1990's with appearances in
+          movies like "Hackers" as William, and "I Shot Andy Warhol" as reporter
+          2.  You can also see some of Chris's earlier work in the television
+          series "The Adventures Of Pete And Pete".  In season 3 episode 4 Chris
+          played the nemesis of older Pete, Matt Uplinger. In the year 2000 Chris
+          also appeared in "American Psycho" as the Maitre D'.<br><br>
+          Chris has also done work both on Off Broadway and Off Off Broadway
+          productions.  Appearing in shows like "Furious" as "Eugene or Anne Frank
+          and Me" as Eddie Valley.  Chris has also preformed as characters such
+          as Lucifer from "Dr. Faustus" and the Phenom from "Something About
+          Baseball".<br><br>
+          After collage, Chris continued train and grow as an actor by taking a
+          variety of classes in NYC.  Some of the classed Chris took where, Master
+          On Camera with Peter Miner, and Advanced Technique with Ron Van Lieu.
+          Chris Also received training in Stage Combat from Patrick Mulcahy, as
+          well as Movement with Richard Morse.
+        </p>
+    </div>
+
+    <div class='sampleVideo container'>
+      <h2 id="reel">Reel</h2>
+      <div class="video_container">
+        <video
+          poster='./data/videos/posters/ChrisC_Demo_Poster.png'
+          onclick="goFullscreen('player1'); return false"
+          class="video_player"
+          id="player1"
+          width="95%"
+        >
+          <source src="./data/videos/ChrisC_Demo.mp4"/>
+          Your browser does not support the HTML5 video tag.  Use a better browser!
+        </video>
+        <div class="overlay player_one" onclick="goFullscreen('player1'); return false"></div>
+        <button id="video-play" onclick="goFullscreen('player1')">Play</button>
+      </div>
+    </div>
+
+    <div class="voiceOver container">
+      <h2>Voice Overs</h2>
+      <div class="big-wrap">
+
+        <div class="wrap">
+          Godsmack ~ BulletProof
+          <audio id="track1">
+            <source src="./data/voiceOver/bulletProof.mp3" type="audio/mp3">
+          </audio>
+          <nav class="layOut">
+            <div id="defaultBar1">
+              <div id="progressBar1"></div>
+            </div>
+            <div class="controls">
+              <button type="button" id="playButton1" class="playBut"></button>
+              <button type="button" id="muteButton1" class='mutebut'></button>
+              <span id="currentTime1">0:00</span>/<span id="fullDuration1">0:00</span>
+            </div>
+          </nav>
+        </div>
+
+        <div class="wrap">
+          The Everlove ~ I'm Dangerous
+          <audio id="track2">
+            <source src="./data/voiceOver/dangerous.mp3" type="audio/mp3">
+          </audio>
+          <nav class="layOut">
+            <div id="defaultBar2">
+              <div id="progressBar2"></div>
+            </div>
+            <div class="controls">
+              <button type="button" id="playButton2" class="playBut"></button>
+              <button type="button" id="muteButton2" class='mutebut'></button>
+              <span id="currentTime2">0:00</span>/<span id="fullDuration2">0:00</span>
+            </div>
+          </nav>
+        </div>
+
+        <div class="wrap">
+          Score ~ Who I Am
+          <audio id="track3">
+            <source src="./data/voiceOver/whoIAm.mp3" type="audio/mp3">
+          </audio>
+          <nav class="layOut">
+            <div id="defaultBar3">
+              <div id="progressBar3"></div>
+            </div>
+            <div class="controls">
+              <button type="button" id="playButton3" class="playBut"></button>
+              <button type="button" id="muteButton3" class='mutebut'></button>
+              <span id="currentTime3">0:00</span>/<span id="fullDuration3">0:00</span>
+            </div>
+          </nav>
+        </div>
+
+        <div class="wrap">
+          Once Monsters ~ Heros of Today
+          <audio id="track4">
+            <source src="./data/voiceOver/herosOfToday.mp3" type="audio/mp3">
+          </audio>
+          <nav class="layOut">
+            <div id="defaultBar4">
+              <div id="progressBar4"></div>
+            </div>
+            <div class="controls">
+              <button type="button" id="playButton4" class="playBut"></button>
+              <button type="button" id="muteButton4" class='mutebut'></button>
+              <span id="currentTime4">0:00</span>/<span id="fullDuration4">0:00</span>
+            </div>
+          </nav>
+        </div>
+
+        <div class="wrap">
+          Imagine Dragons ~ Bad Liar
+          <audio id="track5">
+            <source src="./data/voiceOver/badLiar.mp3" type="audio/mp3">
+          </audio>
+          <nav class="layOut">
+            <div id="defaultBar5">
+              <div id="progressBar5"></div>
+            </div>
+            <div class="controls">
+              <button type="button" id="playButton5" class="playBut"></button>
+              <button type="button" id="muteButton5" class='mutebut'></button>
+              <span id="currentTime5">0:00</span>/<span id="fullDuration5">0:00</span>
+            </div>
+          </nav>
+        </div>
+
+        <div class="wrap">
+          Neffex ~ Rumors
+          <audio id="track6">
+            <source src="./data/voiceOver/rumors.mp3" type="audio/mp3">
+          </audio>
+          <nav class="layOut">
+            <div id="defaultBar6">
+              <div id="progressBar6"></div>
+            </div>
+            <div class="controls">
+              <button type="button" id="playButton6" class="playBut"></button>
+              <button type="button" id="muteButton6" class='mutebut'></button>
+              <span id="currentTime6">0:00</span>/<span id="fullDuration6">0:00</span>
+            </div>
+          </nav>
+        </div>
+
+        <div class="wrap">
+          Kaleo ~ Way Down We Go
+          <audio id="track7">
+            <source src="./data/voiceOver/wayDownWeGo.mp3" type="audio/mp3">
+          </audio>
+          <nav class="layOut">
+            <div id="defaultBar7">
+              <div id="progressBar7"></div>
+            </div>
+            <div class="controls">
+              <button type="button" id="playButton7" class="playBut"></button>
+              <button type="button" id="muteButton7" class='mutebut'></button>
+              <span id="currentTime7">0:00</span>/<span id="fullDuration7">0:00</span>
+            </div>
+          </nav>
+        </div>
+
+        <div class="wrap">
+          Ashes Remain ~ On My Own
+          <audio id="track8">
+            <source src="./data/voiceOver/onMyOwn.mp3" type="audio/mp3">
+          </audio>
+          <nav class="layOut">
+            <div id="defaultBar8">
+              <div id="progressBar8"></div>
+            </div>
+            <div class="controls">
+              <button type="button" id="playButton8" class="playBut"></button>
+              <button type="button" id="muteButton8" class='mutebut'></button>
+              <span id="currentTime8">0:00</span>/<span id="fullDuration8">0:00</span>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="resume container">
+      <h2>Chris Cook</h2>
+      <div>
+        <p>Height: 5' 10"</p>
+        <p>Weight: 170lbs</p>
+        <p>Hair: Dark Brown</p>
+        <p>Eyes: Brown</p>
+      </div>
+
+      <h3 class="small-head">Film</h3>
+      <table>
+        <tr>
+          <td>American Pyscho</td>
+          <td>Maitre D'</td>
+          <td>Lions Gate/Warner Bro.</td>
+        </tr>
+        <tr>
+          <td>I Shot Andy Warhol</td>
+          <td>Reporter</td>
+          <td>Valerie Productions</td>
+        </tr>
+        <tr>
+          <td>Hackers</td>
+          <td>William</td>
+          <td>United Artist</td>
+        </tr>
+        <tr>
+          <td>Confidential Plus</td>
+          <td>Ian</td>
+          <td>Independent Feature</td>
+        </tr>
+        <tr>
+          <td>You're Not Close Enough</td>
+          <td>Sparyk</td>
+          <td>Independent Short</td>
+        </tr>
+        <tr>
+          <td>The Pool</td>
+          <td>Frank</td>
+          <td>Columbia Grad Film</td>
+        </tr>
+      </table>
+
+      <h3 class="small-head">Television</h3>
+      <table>
+        <tr>
+          <td>The Adventures Of Pete & Pete</td>
+          <td>Matt Uplinger</td>
+          <td>Nickelodeon</td>
+        </tr>
+        <tr>
+          <td>Planet Of The Apes</td>
+          <td>Gorthos</td>
+          <td>Saturday Night Live</td>
+        </tr>
+      </table>
+
+      <h3 class="small-head">Off Broadway</h3>
+      <table>
+        <tr>
+          <td>Furious</td>
+          <td>Eugene</td>
+          <td>NY Preformance Works</td>
+        </tr>
+        <tr>
+          <td>Dilettantes And Debutants</td>
+          <td>Micheal</td>
+          <td>The Miranda Theater</td>
+        </tr>
+        <tr>
+          <td>Anne Frank And Me</td>
+          <td>Eddie Valley</td>
+          <td>American Jewish Theater</td>
+        </tr>
+        <tr>
+          <td>Desert Rites</td>
+          <td>John Lancaster</td>
+          <td>Theater Roe Theater</td>
+        </tr>
+        <tr>
+          <td>The Fine Art Of Finesse</td>
+          <td>The Notary</td>
+          <td>The Pearl Theater Co.</td>
+        </tr>
+      </table>
+
+      <h3 class="small-head">Off Off Broadway</h3>
+      <table>
+        <tr>
+          <td>Dr. Faustus</td>
+          <td>Lucifer</td>
+          <td>The Liminal Stage</td>
+        </tr>
+        <tr>
+          <td>Spring Awakening</td>
+          <td>Moritz Steifel</td>
+          <td>The Salon</td>
+        </tr>
+        <tr>
+          <td>Abrosia</td>
+          <td>Rosario</td>
+          <td>T. Schrieber Studio</td>
+        </tr>
+        <tr>
+          <td>Something About Baseball</td>
+          <td>The Phenom</td>
+          <td>Theater Off Park</td>
+        </tr>
+        <tr>
+          <td>PacoV. Put To Sleep</td>
+          <td>Dick</td>
+          <td>Theater Off Park</td>
+        </tr>
+        <tr>
+          <td>Feeding The Moon Fish</td>
+          <td>Martin</td>
+          <td>The Liminal Stage</td>
+        </tr>
+      </table>
+
+      <h3 class="small-head">Training</h3>
+      <table>
+        <tr>
+          <td>Master On Camera Class</td>
+          <td>Peter Miner</td>
+          <td>NYC</td>
+        </tr>
+        <tr>
+          <td>Advanced Techique</td>
+          <td>Ron Van Lieu</td>
+          <td>NYC</td>
+        </tr>
+        <tr>
+          <td>Scene Study</td>
+          <td>Wynn Handman</td>
+          <td>NYC</td>
+        </tr>
+        <tr>
+          <td>Scene Study</td>
+          <td>Terry Schrieber</td>
+          <td>NYC</td>
+        </tr>
+        <tr>
+          <td>Stage Combat</td>
+          <td>Patrick Mulcahy</td>
+          <td>NYC</td>
+        </tr>
+        <tr>
+          <td>Movement</td>
+          <td>Richard Morse</td>
+          <td>NYC</td>
+        </tr>
+      </table>
+
+      <h3 class="small-head">Education</h3>
+      <table>
+        <tr>
+          <td>Kenyon College</td>
+          <td>Theater BFA</td>
+          <td>Gambier, Ohio</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="contact container">
+      <h1>Contact Info</h1>
+      <h3 class="small-head">My Big Agency</h3>
+      <p>Agent: Mr. Agent</p>
+      <p>Email: agent1234@mail.com</p>
+      <p>Phone: (333) 333-3333</p>
+      <p>Fax: 1 (333) 121-1212</p>
+    </div>
+
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/voiceOver.js"></script>
+  </body>
+</html>
